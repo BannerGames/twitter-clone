@@ -72,13 +72,13 @@
           <a href="{% url 'other_user_follow_info' other_user.username %}">
             <div class="col-xs-4">
               <h4 class="follow-info-number">{{ other_user_followers_count }}</h4>
-              <p class="follow-info-description">Followers</p>
+              <p class="follow-info-description">Seguidores</p>
             </div>
           </a>
           <a href="{% url 'other_user_follow_info' other_user.username %}">
             <div class="col-xs-4">
               <h4 class="follow-info-number">{{ other_user_followings_count }}</h4>
-              <p class="follow-info-description">Following</p>
+              <p class="follow-info-description">Seguindo</p>
             </div>
           </a>
         </div>
@@ -126,7 +126,7 @@
 
         <form method="POST" action="{% url 'other_user_profile' other_user.username %}" id="follow-form">
           {% csrf_token %}
-          <input type="submit" id="follow-btn" class="btn btn-default" value="Follow" name="follow_button" />
+          <input type="submit" id="follow-btn" class="btn btn-default" value="Seguir" name="follow_button" />
         </form>
         <style>
           #follow-btn {
@@ -212,7 +212,7 @@
           <img alt="pp_img" src="{{ retweet.retweet_settings.profile_photo.url }}" height="52px" width="52px">
         </div>
         <div class="col-xs-11" id="tweet-right-part">
-          <p id="retweet-p"><i class="fa fa-retweet"></i> {{ other_user.username }} retweeted</p>
+          <p id="retweet-p"><i class="fa fa-retweet"></i> {{ other_user.username }} retweetou</p>
           <div id="tweet-right-part-head-info">
             <a href="{% url 'other_user_profile' retweet.retweet.user.username %}">
               <h5>{{ retweet.retweet_settings.first_name }}</h5>
