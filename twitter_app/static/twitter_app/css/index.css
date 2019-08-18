@@ -14,7 +14,7 @@ html body {
 /* LEFT PART -------------------*/
 
 #left-part {
-  background-image: url(https://raw.githubusercontent.com/BannerGames/twitter-clone/master/twitter_app/static/twitter_app/assets/bg.png);
+  background-image: url("https://raw.githubusercontent.com/BannerGames/twitter-clone/master/twitter_app/static/twitter_app/assets/bg.png");
   color: white;
   background-position: center;
   background-repeat: no-repeat;
