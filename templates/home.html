@@ -48,11 +48,11 @@
             <p>{{ current_user_tweets_count }}</p>
           </div>
           <div class="col-xs-4">
-            <a href="{% url 'follow_info' %}">Followers: </a>
+            <a href="{% url 'follow_info' %}">Seguidores: </a>
             <p>{{ current_user_followers_count }}</p>
           </div>
           <div class="col-xs-4">
-            <a href="{% url 'follow_info' %}">Following: </a>
+            <a href="{% url 'follow_info' %}">Seguindo: </a>
             <p>{{ current_user_followings_count }}</p>
           </div>
         </div>
@@ -60,7 +60,7 @@
       <!-- /Follow info -->
       <form class="text-center" method="POST" action="{% url 'home' %}">
         {% csrf_token %}
-        <input required type="text" placeholder="What's up?" id="home-tweet-input" name="tweet_content"/>
+        <input required type="text" placeholder="Glória a Arstotzka!" id="home-tweet-input" name="tweet_content"/>
         <input value="Tweet" type="submit" id="home-tweet-btn" name="home_tweet_submit"/>
       </form>
     </div>
@@ -69,7 +69,7 @@
     <!-- Follow suggestions -->
     <!-- DONT FORGET MAXIMUM 5 CELLS OTHERWISE THEY BREACH THEIR FRAME -->
     <div id="follow-suggestion-box">
-      <h4>You may also like</h4>
+      <h4>Você também pode gostar de</h4>
       <!-- cell -->
       <div id="suggestion-profile">
         <div class="row">
@@ -235,7 +235,7 @@
 
         <!-- Explore link footer -->
         <div id="explore-footer" class="text-center">
-          <p>For more tweets go to specific users profiles or <a href="{% url 'explore' %}">explore new users!</a></p>
+          <p>Para mais tweets vá a perfis específicos de usuários <a href="{% url 'explore' %}">Explorar novos usuários!</a></p>
         </div><!-- /explore footer -->
 
       </div>
