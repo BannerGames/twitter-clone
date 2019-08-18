@@ -24,11 +24,6 @@ html body {
   padding-left: 20% !important;
   border-radius: 0px;
   
-   filter: blur(5px);
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
 }
 
 #left-part p i {
