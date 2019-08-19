@@ -1,6 +1,7 @@
 import os
 import cloudinary
-
+import django_heroku
+django_heroku.settings(locals())
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,9 +33,9 @@ INSTALLED_APPS = [
 ]
 
 cloudinary.config(
-    cloud_name = 'hift1g2ql',
-    api_key = '669942266591368',
-    api_secret = '8GZtErG0KWqje3bUlplYfaqt8LU' ,
+    cloud_name = 'dhkmkyeyv',
+    api_key = '878315939841351',
+    api_secret = '-IkFwj5-yjYVJj2VJU5eMCpZ3rw' ,
 )
 
 MIDDLEWARE = [
